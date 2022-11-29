@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="barstyle.css">
+    <title>Moda</title>
+</head>
+<body>
+    <div class="naveg"> 
+        <ul>
+            <li class="lista activo">
+                <a href="#">
+                    <span class="icono"><i class="fa-solid fa-house"></i></span>
+                    <span class="tituloB">Inicio</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="página 1/pag1.html">
+                    <span class="icono"><i class="fa-solid fa-chart-simple"></i></span>
+                    <span class="tituloB">Tendencias</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="página 2/pag2.html">
+                    <span class="icono"><i class="fa-solid fa-briefcase"></i></span>
+                    <span class="tituloB">Marcas Influyentes</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="página 3/pag3.html">
+                    <span class="icono"><i class="fa-solid fa-calendar"></i></span>
+                    <span class="tituloB">Eventos</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="página 4/pag4.html">
+                    <span class="icono"><i class="fa-solid fa-star"></i></span>
+                    <span class="tituloB">Modelos</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="página 5/pag5.html">
+                    <span class="icono"><i class="fa-solid fa-shirt"></i></span>
+                    <span class="tituloB">Diseño</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="página 6/pag6.html">
+                    <span class="icono"><i class="fa-solid fa-ruler"></i></span>
+                    <span class="tituloB">Costura</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="página 7/pag7.html">
+                    <span class="icono"><i class="fa-solid fa-landmark"></i></span>
+                    <span class="tituloB">Historia</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="página 8/pag8.html">
+                    <span class="icono"><i class="fa-solid fa-tree"></i></span>
+                    <span class="tituloB">Impacto Ambiental</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#">
+                    <span class="icono"><i class="fa-solid fa-comment"></i></span>
+                    <span class="tituloB">Contacto</span>
+                </a>
+            </li>
+   <div class="indicador"></div>
+        </ul>
+    </div>
+<script>
+    let lista = document.querySelectorAll('li');
+    for (let i=0; i<lista.length; i++){
+        lista[i].onmouseover = function(){
+          let j = 0;
+          while (j < lista.length){
+            lista[j++].className = 'lista';
+          }
+          lista[i].className = 'lista activo';
+        }
+    }
+</script>
+<section>
+<header>
+    <a href="#"><img src="modalogo.png" class="logo"></a>
+    <ul>
+        <li><a href="#" class="activo">Inicio</a></li>
+        <li><a href="página 8/pag8.html">Feedback</a></li>
+    </ul>
+</header>
+<div class="contenido">
+    <div class="textoI"><h2>MODA Y ELEGANCIA</h2> <br><p>Todo lo que necesitas saber de este mundo, <br>donde descubrirás cosas impresionates. <br> Navega y descubre, <br> tantas cosas por aprender.</p></div>
+    <br><a href="#" class="cono">Conocer más</a>
+</div>
+<div class="imgI">
+    <img src="Modei.png" class="modei">
+</div>
+</section>
+<footer>
+    Lenin Antonio Loja Espinoza <a href="mailto:l3ninloja@gmail.com?subject=contacto">Correo</a> <a href="tel:+593995681121">Teléfono</a> © Todos los 
+    derechos reservados. 
+</footer>
+</body>
+</html>

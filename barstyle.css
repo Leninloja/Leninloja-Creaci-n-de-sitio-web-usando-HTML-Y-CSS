@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    min-height: 100vh;
+    background: white;
+}
+
+.naveg {
+    position: relative;
+    width: 11vh;
+    height: 101vh;
+    background: #3e0454;
+    border-radius: none;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+.naveg ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.naveg ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.naveg ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.naveg ul li a .icono {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.naveg ul li.activo a .icono {
+    color: #3e0454;
+}
+.naveg ul li a .icono i {
+    font-size: 24px;
+}
+.naveg ul li a .tituloB {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    background: #3e0454;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.naveg ul li:hover a .tituloB {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-25px) translateY(-50%);
+}
+
+.naveg ul li a .tituloB::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background:#3e0454;
+    left: -8px;
+    top: 46%;
+    transform: rotate(45deg) translateY(-50%);
+    border-radius: 2px;
+}
+
+.naveg ul .indicador {
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+
+.naveg ul .indicador::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.naveg ul li:nth-child(1).activo ~ .indicador {
+    transform: translateY(calc(70px * 0));
+}
+
+.naveg ul li:nth-child(2).activo ~ .indicador {
+    transform: translateY(calc(70px * 1));
+}
+
+.naveg ul li:nth-child(3).activo ~ .indicador {
+    transform: translateY(calc(70px * 2));
+}
+
+.naveg ul li:nth-child(4).activo ~ .indicador {
+    transform: translateY(calc(70px * 3));
+}
+
+.naveg ul li:nth-child(5).activo ~ .indicador {
+    transform: translateY(calc(70px * 4));
+}
+
+.naveg ul li:nth-child(6).activo ~ .indicador {
+    transform: translateY(calc(70px * 5));
+}
+
+.naveg ul li:nth-child(7).activo ~ .indicador {
+    transform: translateY(calc(70px * 6));
+}
+
+.naveg ul li:nth-child(8).activo ~ .indicador {
+    transform: translateY(calc(70px * 7));
+}
+
+.naveg ul li:nth-child(9).activo ~ .indicador {
+    transform: translateY(calc(70px * 8));
+}
+
+.naveg ul li:nth-child(10).activo ~ .indicador {
+    transform: translateY(calc(70px * 9));
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position:absolute;
+    max-width: 55px;
+    top: 10%;  
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display:grid;
+    color: #C6775C;
+    font-weight: 600;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+header ul li a:hover,
+header ul li a.activo {
+    text-decoration: none;
+    padding: 6px 15px;
+    background:#3e0454;
+    color: #fffefd;
+    border-radius: 20px;
+}
+
+header ul li a.activo {
+    background: #3e0454;
+}
+.imgI {
+    position: absolute;
+    right: 15%;
+}
+
+.textoI {
+    color: #C6775C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 150%;
+    position: absolute;
+    left:15%;
+    bottom: 40%;
+
+}
+
+.textoI p {
+color: black;
+}
+.cono {
+    position: absolute;
+    left: 15%;
+    bottom: 32%;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #C6775C;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    top: 101%;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+}

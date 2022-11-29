@@ -1,0 +1,16 @@
+
+<p id="despliegue" onclick="mostrar()">+</p>
+<p id="oculto" onclick="ocultar()">-</p>
+<script>
+    function ocultar(){
+        document.getElementById('oculto').style.display = 'none';
+        document.getElementById('despliegue').style.display = 'block';
+        document.getElementById('detalle').style.display = 'none';
+    }
+
+    function mostrar(){
+        document.getElementById('oculto').style.display = 'block';
+        document.getElementById('despliegue').style.display = 'none';
+        document.getElementById('detalle').style.display = 'block';
+    }
+</script>
